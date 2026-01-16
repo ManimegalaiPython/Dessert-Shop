@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blogs</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/blogs.css">
+</head>
+
+<body>
+
+
+  <header>
+    <div class="navbar">
+
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="images/logo.png" alt="Dessert Logo">
+        <span>The Dessert House</span>
+      </div>
+
+      <!-- MENU -->
+      <nav class="nav-links">
+        <a href="aboutus.html">About Us</a>
+
+        <!-- Desserts Dropdown -->
+        <div class="dropdown">
+          <a href="javascript:void(0)" onclick="toggleDropdown()">Desserts</a>
+          <div class="dropdown-menu" id="dessertMenu">
+            <a href="alldesert.html">All Desserts</a>
+            <a href="pastry.html">Pastry</a>
+            <a href="brownies.html">Brownies</a>
+            <a href="tarts.html">Tart</a>
+            <a href="teacake.html">Tea Cake</a>
+            <a href="cupcake.html">Cup Cake</a>
+            <a href="jarcake.html">Jar Cake</a>
+            <a href="combo.html">Combos</a>
+          </div>
+        </div>
+
+        <a href="contact.html">Contact</a>
+      </nav>
+
+
+      <!-- RIGHT -->
+      <div class="nav-right">
+        <div class="search-box">
+          <input type="text" placeholder="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button class="login-btn">Log In / Sign Up</button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- LOGIN POPUP -->
+  <div class="overlay" id="loginOverlay">
+    <div class="login-modal">
+      <span class="close-btn" onclick="closeLogin()">✕</span>
+
+      <h2>Login / Sign Up</h2>
+
+      <input type="text" id="loginInput" placeholder="Enter Email ID">
+      <p class="switch" onclick="toggleLoginMode()">With Mobile</p>
+
+      <button class="otp-btn" onclick="sendOTP()">Get OTP →</button>
+
+      <input type="text" id="otpInput" placeholder="Enter OTP" class="hidden"><br>
+      <button class="otp-btn hidden" id="verifyBtn" onclick="verifyOTP()">Verify OTP</button>
+
+      <p class="terms">
+        By continuing I agree to The Dessert House’s Terms and Conditions and Privacy Policy.
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <section class="blog-section">
+
+    <h2>Blogs</h2>
+
+    <div class="blog-wrapper">
+
+      <!-- Left Blog Card -->
+      <div class="blog-card">
+        <img src="images/image 2.png" alt="Raksha Bandhan">
+
+        <p class="blog-date">29th July, 2025</p>
+
+        <h3 class="blog-title">
+          Raksha Bandhan Celebration Ideas to Make the Day Truly Memorable
+        </h3>
+      </div>
+
+      <!-- Right Content -->
+      <div class="blog-content">
+
+        <h3 class="main-title">
+          Raksha Bandhan Celebration Ideas to Make the Day Truly Memorable
+        </h3>
+
+        <p>
+          Raksha Bandhan is not just about tying a Rakhi on your brother’s wrist; it's about cherishing the
+          special sibling bond you have with them. No matter if you live in the same house or in different
+          cities, celebrating Raksha Bandhan deepens your connection. It's an opportunity to slow down and
+          express love to your siblings.
+        </p>
+
+        <p>
+          Why not try something different this year? Whether you are celebrating in person or online,
+          we've compiled a list of thoughtful Rakhi celebration ideas, including online Rakhi celebration
+          ideas and gifting suggestions to make your Raksha Bandhan special.
+        </p>
+
+        <h4>Personalised Rakhi and Sweet Delight</h4>
+
+        <p>
+          This one is one of the most heartfelt and creative Rakhi ideas. Make a Rakhi by yourself or
+          customise one you've bought. Pair it with Theobroma’s Raksha Bandhan Chocolate Rochers Gift Box
+          or Raksha Bandhan Mithai Confectionery Box and a thoughtful card. It is a tiny yet kind gesture
+          (and tasty).
+        </p>
+
+        <h4>Cakes That Say It All</h4>
+
+
+        <!-- FULL CONTENT (hidden initially) -->
+        <div class="more-content">
+
+          <p>
+            Raksha Bandhan Kunafa Cake for a fusion touch Dubai-style, or our Raksha Bandhan Mix Berry
+            Chocolate Cake for those who want a classic with a fruity punch.
+          </p>
+
+          <p>
+            Too far away? Just order the cake online from our vast menu of delectable cakes and send the
+            love to where they live. It's one of the best online Rakhi celebration ideas for siblings who
+            live away.
+          </p>
+
+          <p>
+            What better way than to dress in comfortable PJs and watch your favourite movies together!
+            And to go perfectly well with the movie, serve The Dessert House dessert board made with
+            cupcakes, pastries, cookies, and don't forget the gift–the Raksha Bandhan Mini Brownies Gift
+            Box. For a more luxurious feel, consider gifting our Raksha Bandhan Celebration Gift Hamper Box.
+          </p>
+
+          <h4>Virtual Celebrations with a Delicious Touch</h4>
+
+          <p>
+            Not together with your sibling this Rakhi? Not a problem. Opt for virtual Rakhi celebration
+            ideas such as a surprise doorstep delivery of the Rakhi, Raksha Bandhan Premium Gift Hamper
+            Basket, and a cake. Simply buy cake online from The Dessert House. With a video call, a shared
+            playlist, and dessert in hand, you'll feel closer in no time.
+          </p>
+
+          <h4>Perfect Gift Hamper Exchange</h4>
+
+          <p>
+            Up your gift-giving game with The Dessert House's limited-edition hampers and boxes. Whether
+            you are going simple or crazy premium, you'll find something perfect:
+          </p>
+
+          <h4>Gift Bags</h4>
+          <p>
+            Raksha Bandhan Premium Gift Hamper Bag<br>
+            Raksha Bandhan Luxury Gift Hamper Bag<br>
+            Raksha Bandhan Indulgence Gift Hamper Bag
+          </p>
+
+          <h4>Gift Boxes</h4>
+          <p>
+            Raksha Bandhan Celebration Gift Hamper Box<br>
+            Raksha Bandhan Premium Gift Hamper Box<br>
+            Raksha Bandhan Luxury Gift Hamper Box<br>
+            Raksha Bandhan Indulgence Gift Hamper Box
+          </p>
+
+          <h4>Gift Hamper Baskets</h4>
+          <p>
+            Raksha Bandhan Luxury Gift Hamper Basket<br>
+            Raksha Bandhan Indulgence Gift Hamper Basket
+          </p>
+
+          <p>
+            Each one is personalised to reflect your bond and includes luxury treats such as brownies,
+            chocolates, and gourmet snacks.
+          </p>
+
+          <p>
+            <strong>Note:</strong> Our Raksha Bandhan special products will only be available for a short
+            time, from August 1st to August 11th, 2025. Shop soon to surprise your loved ones with our
+            limited period festive delights!
+          </p>
+
+        </div>
+
+        <button class="read-btn" onclick="toggleRead(this)">Click to read</button>
+
+
+      </div>
+
+    </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <section class="blog-section">
+
+    <div class="blog-wrapper">
+
+      <!-- Left Blog Card -->
+      <div class="blog-card">
+        <img src="images/image 4.png" alt="Happy Wife Day">
+
+        <p class="blog-date">29th July, 2025</p>
+
+        <h3 class="blog-title">
+          Happy Wife Day Quotes, Wishes & Messages to Make Her Smile
+        </h3>
+      </div>
+
+      <!-- Right Content -->
+      <div class="blog-content">
+
+        <h3 class="main-title">
+          Happy Wife Day Quotes, Wishes & Messages to Make Her Smile
+        </h3>
+
+        <p>
+          Every love story is unique, but the bond between a husband and wife is something truly timeless.
+          Wife’s Day is the perfect moment to pause, appreciate, and remind her how much she means to you.
+          Words have a way of reaching the heart like nothing else, and sometimes a simple line can carry
+          the weight of a thousand emotions. Whether you’re looking for Happy Wife Day quotes, heartfelt
+          wishes, or short and sweet messages, here’s a collection to help you put your feelings into words.
+        </p>
+
+        <h4>Happy Wife Day Quotes</h4>
+
+        <p>
+          Here are some thoughtful wife day quotes you can share to express your gratitude and admiration:
+        </p>
+
+        <p>
+          “A wife is not just a partner; she is the heart of the home and the soul of love.”<br>
+
+          “Behind every happy man is a wife who believed in him even when he doubted himself.”<br>
+
+          “A good wife brings joy to your life, strength to your struggles, and peace to your soul.”<br>
+
+          “Marriage isn’t about finding someone you can live with—it’s about finding someone you can’t live
+          without. That’s my wife.”<br>
+
+          “A wife’s love is the most beautiful chapter in a man’s story.”
+        </p>
+
+        <!-- HIDDEN CONTENT -->
+        <div class="more-content">
+
+          <h4>Romantic Wife Day Quotes</h4>
+
+          <p>
+            “My wife, my love, my forever—Happy Wife’s Day to the one who completes me.”<br>
+            “Every love song suddenly makes sense when I think of you, my wife.”<br>
+            “You are the wish I never knew I made that came true anyway.”<br>
+            “My favourite place in the world is by your side. Happy Wife’s Day.”
+          </p>
+
+          <h4>Wife Day Wishes</h4>
+
+          <p>
+            “Happy Wife’s Day to the woman who makes my life brighter every single day.”<br>
+            “You are not just my wife, you’re my best friend and greatest blessing.”<br>
+            “To my partner in life—Happy Wife’s Day. Thank you for being everything I needed and more.”
+          </p>
+
+          <h4>Short Wife Day Messages</h4>
+
+          <p>
+            “Happy Wife’s Day, my love. You’re my forever.”<br>
+            “Life is beautiful because you’re in it.”<br>
+            “Every day with you feels like a gift.”
+          </p>
+
+          <h4>Funny Wife Day Quotes</h4>
+
+          <p>
+            “Happy Wife’s Day to the only woman who can boss me around and still get away with it.”<br>
+            “Behind every successful husband is a very tired wife.”
+          </p>
+
+          <h4>Why Wife’s Day Matters</h4>
+
+          <p>
+            Wife’s Day is a reminder to slow down and celebrate the love, strength,
+            and companionship of the woman who shares life with you.
+          </p>
+
+        </div>
+
+        <button class="read-btn" onclick="toggleRead(this)">Click to read</button>
+
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="blog-section">
+
+    <h2>Blogs</h2>
+
+    <div class="blog-wrapper">
+
+      <!-- Left Blog Card -->
+      <div class="blog-card">
+        <img src="images/image 2.png" alt="Raksha Bandhan">
+
+        <p class="blog-date">29th July, 2025</p>
+
+        <h3 class="blog-title">
+          Raksha Bandhan Celebration Ideas to Make the Day Truly Memorable
+        </h3>
+      </div>
+
+      <!-- Right Content -->
+      <div class="blog-content">
+
+        <h3 class="main-title">
+          Raksha Bandhan Celebration Ideas to Make the Day Truly Memorable
+        </h3>
+
+        <p>
+          Raksha Bandhan is not just about tying a Rakhi on your brother’s wrist; it's about cherishing the
+          special sibling bond you have with them. No matter if you live in the same house or in different
+          cities, celebrating Raksha Bandhan deepens your connection. It's an opportunity to slow down and
+          express love to your siblings.
+        </p>
+
+        <p>
+          Why not try something different this year? Whether you are celebrating in person or online,
+          we've compiled a list of thoughtful Rakhi celebration ideas, including online Rakhi celebration
+          ideas and gifting suggestions to make your Raksha Bandhan special.
+        </p>
+
+        <h4>Personalised Rakhi and Sweet Delight</h4>
+
+        <p>
+          This one is one of the most heartfelt and creative Rakhi ideas. Make a Rakhi by yourself or
+          customise one you've bought. Pair it with Theobroma’s Raksha Bandhan Chocolate Rochers Gift Box
+          or Raksha Bandhan Mithai Confectionery Box and a thoughtful card. It is a tiny yet kind gesture
+          (and tasty).
+        </p>
+
+        <h4>Cakes That Say It All</h4>
+
+        <!-- FULL CONTENT (hidden initially) -->
+        <div class="more-content">
+
+          <p>
+            Raksha Bandhan Kunafa Cake for a fusion touch Dubai-style, or our Raksha Bandhan Mix Berry
+            Chocolate Cake for those who want a classic with a fruity punch.
+          </p>
+
+          <p>
+            Too far away? Just order the cake online from our vast menu of delectable cakes and send the
+            love to where they live. It's one of the best online Rakhi celebration ideas for siblings who
+            live away.
+          </p>
+
+          <p>
+            What better way than to dress in comfortable PJs and watch your favourite movies together!
+            And to go perfectly well with the movie, serve The Dessert House dessert board made with
+            cupcakes, pastries, cookies, and don't forget the gift–the Raksha Bandhan Mini Brownies Gift
+            Box. For a more luxurious feel, consider gifting our Raksha Bandhan Celebration Gift Hamper Box.
+          </p>
+
+          <h4>Virtual Celebrations with a Delicious Touch</h4>
+
+          <p>
+            Not together with your sibling this Rakhi? Not a problem. Opt for virtual Rakhi celebration
+            ideas such as a surprise doorstep delivery of the Rakhi, Raksha Bandhan Premium Gift Hamper
+            Basket, and a cake. Simply buy cake online from The Dessert House. With a video call, a shared
+            playlist, and dessert in hand, you'll feel closer in no time.
+          </p>
+
+          <h4>Perfect Gift Hamper Exchange</h4>
+
+          <p>
+            Up your gift-giving game with The Dessert House's limited-edition hampers and boxes. Whether
+            you are going simple or crazy premium, you'll find something perfect:
+          </p>
+
+          <h4>Gift Bags</h4>
+          <p>
+            Raksha Bandhan Premium Gift Hamper Bag<br>
+            Raksha Bandhan Luxury Gift Hamper Bag<br>
+            Raksha Bandhan Indulgence Gift Hamper Bag
+          </p>
+
+          <h4>Gift Boxes</h4>
+          <p>
+            Raksha Bandhan Celebration Gift Hamper Box<br>
+            Raksha Bandhan Premium Gift Hamper Box<br>
+            Raksha Bandhan Luxury Gift Hamper Box<br>
+            Raksha Bandhan Indulgence Gift Hamper Box
+          </p>
+
+          <h4>Gift Hamper Baskets</h4>
+          <p>
+            Raksha Bandhan Luxury Gift Hamper Basket<br>
+            Raksha Bandhan Indulgence Gift Hamper Basket
+          </p>
+
+          <p>
+            Each one is personalised to reflect your bond and includes luxury treats such as brownies,
+            chocolates, and gourmet snacks.
+          </p>
+
+          <p>
+            <strong>Note:</strong> Our Raksha Bandhan special products will only be available for a short
+            time, from August 1st to August 11th, 2025. Shop soon to surprise your loved ones with our
+            limited period festive delights!
+          </p>
+
+        </div>
+
+        <button class="read-btn" onclick="toggleRead(this)">Click to read</button>
+
+
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <section class="blog-section">
+
+    <div class="blog-wrapper">
+
+      <!-- Left Blog Card -->
+      <div class="blog-card">
+        <img src="images/image 4.png" alt="Happy Wife Day">
+
+        <p class="blog-date">29th July, 2025</p>
+
+        <h3 class="blog-title">
+          Happy Wife Day Quotes, Wishes & Messages to Make Her Smile
+        </h3>
+      </div>
+
+      <!-- Right Content -->
+      <div class="blog-content">
+
+        <h3 class="main-title">
+          Happy Wife Day Quotes, Wishes & Messages to Make Her Smile
+        </h3>
+
+        <p>
+          Every love story is unique, but the bond between a husband and wife is something truly timeless.
+          Wife’s Day is the perfect moment to pause, appreciate, and remind her how much she means to you.
+          Words have a way of reaching the heart like nothing else, and sometimes a simple line can carry
+          the weight of a thousand emotions. Whether you’re looking for Happy Wife Day quotes, heartfelt
+          wishes, or short and sweet messages, here’s a collection to help you put your feelings into words.
+        </p>
+
+        <h4>Happy Wife Day Quotes</h4>
+
+        <p>
+          Here are some thoughtful wife day quotes you can share to express your gratitude and admiration:
+        </p>
+
+        <p>
+          “A wife is not just a partner; she is the heart of the home and the soul of love.”<br>
+
+          “Behind every happy man is a wife who believed in him even when he doubted himself.”<br>
+
+          “A good wife brings joy to your life, strength to your struggles, and peace to your soul.”<br>
+
+          “Marriage isn’t about finding someone you can live with—it’s about finding someone you can’t live
+          without. That’s my wife.”<br>
+
+          “A wife’s love is the most beautiful chapter in a man’s story.”
+        </p>
+        <!-- HIDDEN CONTENT -->
+        <div class="more-content">
+
+          <h4>Romantic Wife Day Quotes</h4>
+
+          <p>
+            “My wife, my love, my forever—Happy Wife’s Day to the one who completes me.”<br>
+            “Every love song suddenly makes sense when I think of you, my wife.”<br>
+            “You are the wish I never knew I made that came true anyway.”<br>
+            “My favourite place in the world is by your side. Happy Wife’s Day.”
+          </p>
+
+          <h4>Wife Day Wishes</h4>
+
+          <p>
+            “Happy Wife’s Day to the woman who makes my life brighter every single day.”<br>
+            “You are not just my wife, you’re my best friend and greatest blessing.”<br>
+            “To my partner in life—Happy Wife’s Day. Thank you for being everything I needed and more.”
+          </p>
+
+          <h4>Short Wife Day Messages</h4>
+
+          <p>
+            “Happy Wife’s Day, my love. You’re my forever.”<br>
+            “Life is beautiful because you’re in it.”<br>
+            “Every day with you feels like a gift.”
+          </p>
+
+          <h4>Funny Wife Day Quotes</h4>
+
+          <p>
+            “Happy Wife’s Day to the only woman who can boss me around and still get away with it.”<br>
+            “Behind every successful husband is a very tired wife.”
+          </p>
+
+          <h4>Why Wife’s Day Matters</h4>
+
+          <p>
+            Wife’s Day is a reminder to slow down and celebrate the love, strength,
+            and companionship of the woman who shares life with you.
+          </p>
+
+        </div>
+
+        <button class="read-btn" onclick="toggleRead(this)">Click to read</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <!-- ✅ UPWARD CURVE -->
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="
+      M0,70
+      C72,10 72,10 144,70
+      C216,130 216,130 288,70
+      C360,10 360,10 432,70
+      C504,130 504,130 576,70
+      C648,10 648,10 720,70
+      C792,130 792,130 864,70
+      C936,10 936,10 1008,70
+      C1080,130 1080,130 1152,70
+      C1224,10 1224,10 1296,70
+      C1368,130 1368,130 1440,70
+      L1440,0
+      L0,0
+      Z" fill="#F8EBEB" />
+      </svg>
+    </div>
+
+    <!-- QUICK LINKS TITLE (CENTERED) -->
+    <div class="footer-column quick-links-title">
+      <h3>Quick Links</h3>
+    </div>
+
+    <div class="footer-container">
+
+
+      <div class="footer-column">
+
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Dessert House Logo">
+          <h2>The Dessert House</h2>
+        </div>
+      </div>
+
+
+      <div class="footer-column footer-links">
+        <a href="aboutus.html">About Us</a>
+        <a href="alldesert.html">Desserts</a>
+        <a href="contact.html">Contact</a>
+        <a href="blogs.html">Blogs</a>
+      </div>
+
+      <div class="footer-column footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="refund.html" style="color:#D72D52;">Refund Policy</a>
+      </div>
+
+      <div class="footer-column">
+        <div class="contact-info">
+          <div><i class="fa-solid fa-phone"></i> +91 987 654 3210</div>
+          <div><i class="fa-solid fa-envelope"></i> Contact@thedesserthouse.in</div>
+        </div>
+        <div class="social-icons">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      2024@thedesserthousein
+    </div>
+    </div>
+
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy – The Dessert House</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/privacy.css">
+</head>
+<body>
+  
+<header>
+  <div class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="images/logo.png" alt="Dessert Logo">
+      <span>The Dessert House</span>
+    </div>
+
+    <!-- MENU -->
+    <nav class="nav-links">
+  <a href="aboutus.html">About Us</a>
+
+  <!-- Desserts Dropdown -->
+  <div class="dropdown">
+    <a href="javascript:void(0)" onclick="toggleDropdown()">Desserts</a>
+    <div class="dropdown-menu" id="dessertMenu">
+      <a href="alldesert.html">All Desserts</a>
+      <a href="pastry.html">Pastry</a>
+      <a href="brownies.html">Brownies</a>
+      <a href="tarts.html">Tart</a>
+      <a href="teacake.html">Tea Cake</a>
+      <a href="cupcake.html">Cup Cake</a>
+      <a href="jarcake.html">Jar Cake</a>
+      <a href="combo.html">Combos</a>
+    </div>
+  </div>
+
+  <a href="contact.html">Contact</a>
+</nav>
+
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <button class="login-btn">Log In / Sign Up</button>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- LOGIN POPUP -->
+<div class="overlay" id="loginOverlay">
+  <div class="login-modal">
+    <span class="close-btn" onclick="closeLogin()">✕</span>
+
+    <h2>Login / Sign Up</h2>
+
+    <input type="text" id="loginInput" placeholder="Enter Email ID">
+    <p class="switch" onclick="toggleLoginMode()">With Mobile</p>
+
+    <button class="otp-btn" onclick="sendOTP()">Get OTP →</button>
+
+    <input type="text" id="otpInput" placeholder="Enter OTP" class="hidden"><br>
+    <button class="otp-btn hidden" id="verifyBtn" onclick="verifyOTP()">Verify OTP</button>
+
+    <p class="terms">
+      By continuing I agree to The Dessert House’s Terms and Conditions and Privacy Policy.
+    </p>
+  </div>
+</div>
+
+
+
+
+  <section class="privacy-wrapper">
+
+    <h1>Privacy Policy – The Dessert House</h1>
+
+    <p class="note">
+      <strong>Note:</strong> This Privacy Policy may change at any time without prior notice.
+      Please review it periodically.
+    </p>
+
+    <div class="privacy-box">
+
+      <p class="intro">
+        By visiting or using our Website, you agree to the practices described below.
+        If you do not agree, please do not use our Website.
+        This Privacy Policy is part of and subject to our Terms of Use.
+      </p>
+
+      <h2>Information We Collect</h2>
+      <p>When you order, register, or interact with our Website/App, we may collect:</p>
+      <ul>
+        <li>Name, Email address, Phone number</li>
+        <li>Receiver’s name and Delivery address</li>
+        <li>Billing address and Payment details</li>
+        <li>Other details to help serve you better</li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      <p>We use the collected information to:</p>
+      <ul>
+        <li>Personalize your shopping experience</li>
+        <li>Improve our website and services</li>
+        <li>Process orders and payments</li>
+        <li>Respond to customer service requests</li>
+        <li>Run promotions, contests, or surveys</li>
+        <li>Request ratings & reviews of products/services</li>
+        <li>Send transactional & promotional messages via Email, SMS, WhatsApp, or Calls</li>
+        <li>Follow up after inquiries (chat, email, phone)</li>
+      </ul>
+
+      <h2>How We Protect Your Information</h2>
+      <ul>
+        <li>Our Website is regularly scanned for vulnerabilities and malware.</li>
+        <li>Personal data is stored behind secure networks, accessible only by authorized staff.</li>
+        <li>Sensitive data (e.g., payment info) is encrypted using SSL (Secure Socket Layer) technology.</li>
+        <li>All payments are processed securely through third-party payment gateways.</li>
+        <li>We do not store card details on our servers.</li>
+      </ul>
+
+
+      <h2>Cookies</h2>
+<p>Yes, we use cookies to:</p>
+<ul>
+  <li>Remember items in your shopping cart</li>
+  <li>Save your preferences for future visits</li>
+  <li>Analyze site traffic and interactions</li>
+</ul>
+
+<p>
+  You can disable cookies via your browser settings, but some features may not work properly.
+  You will still be able to place orders.
+</p>
+
+<h2>Third-Party Disclosure</h2>
+<ul>
+  <li>We do not sell, trade, or share your personal information with outside parties.</li>
+  <li>We do not host third-party products/services on our Website.</li>
+</ul>
+
+<h2>Emails and Marketing</h2>
+<p>We may use your email to:</p>
+<ul>
+  <li>Send order updates and information</li>
+  <li>Respond to inquiries</li>
+  <li>Share promotions and product updates</li>
+</ul>
+
+<p>
+  You can unsubscribe anytime by clicking the link at the bottom of our emails
+  or by writing to us at
+  <a href="mailto:care@thedesserthouse.com">care@thedesserthouse.com</a>.
+</p>
+
+<p class="contact-title">
+  If you have any questions about this Privacy Policy:
+</p>
+
+<p class="contact-details">
+  <strong>The Dessert House</strong><br>
+  No. 123, Karaikudi, Tamil Nadu, India<br>
+  +91-987 654 3210<br>
+  <a href="mailto:care@thedesserthouse.com">care@thedesserthouse.com</a>
+</p>
+
+    </div>
+
+  </section>
+
+  
+<footer>
+
+  <!-- ✅ UPWARD CURVE -->
+  <div class="footer-wave">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path d="
+      M0,70
+      C72,10 72,10 144,70
+      C216,130 216,130 288,70
+      C360,10 360,10 432,70
+      C504,130 504,130 576,70
+      C648,10 648,10 720,70
+      C792,130 792,130 864,70
+      C936,10 936,10 1008,70
+      C1080,130 1080,130 1152,70
+      C1224,10 1224,10 1296,70
+      C1368,130 1368,130 1440,70
+      L1440,0
+      L0,0
+      Z"
+      fill="#F8EBEB"/>
+  </svg>
+</div>
+
+  <!-- QUICK LINKS TITLE (CENTERED) -->
+  <div class="footer-column quick-links-title">
+    <h3>Quick Links</h3>
+  </div>
+
+  <div class="footer-container">
+     
+
+    <div class="footer-column">
+      
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Dessert House Logo">
+        <h2>The Dessert House</h2>
+      </div>
+    </div>
+    
+
+    <div class="footer-column footer-links">
+      <a href="aboutus.html">About Us</a>
+      <a href="alldesert.html">Desserts</a>
+      <a href="contact.html">Contact</a>
+      <a href="blogs.html">Blogs</a>
+    </div>
+
+    <div class="footer-column footer-links">
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms and Conditions</a>
+      <a href="refund.html" style="color:#D72D52;">Refund Policy</a>
+    </div>
+
+    <div class="footer-column">
+      <div class="contact-info">
+        <div><i class="fa-solid fa-phone"></i> +91 987 654 3210</div>
+        <div><i class="fa-solid fa-envelope"></i> Contact@thedesserthouse.in</div>
+      </div>
+      <div class="social-icons">
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    2024@thedesserthousein
+  </div>
+  </div>
+
+</footer>
+<script src="js/script.js"></script>
+
+
+
+
+
+</body>
+</html>
